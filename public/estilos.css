@@ -1,0 +1,36 @@
+
+
+h1{
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+input { 
+  border:1px solid #000000;
+  background: #FDFDFD;
+  font-size: 20px;
+  padding: 4px;
+  margin: 4px
+}
+
+img {
+  width: 300px;
+  
+}
+
+button {
+  border: 1px solid #000000;
+  background: #d8d8d8;
+  padding: 10px;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  text-align: center;
+}
+
