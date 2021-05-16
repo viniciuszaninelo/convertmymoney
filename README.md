@@ -6,7 +6,6 @@ My second project, with the goal of learning Express.js
 
 The project is summarized in a website that makes a conversion of a value according to the past quotation
 
-Project developed with the objective of learning in Express.js
 
 [WebSite](https://convertmymoney-gold.vercel.app/)
 
