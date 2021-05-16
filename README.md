@@ -23,9 +23,11 @@ for notes on how to deploy the project on a live system.
 
 You need NodeJS and NPM in your computer
 
-
+```
 npm install 
-npm start
+npm run dev
+```
+
 
 
 ## Planning 
