@@ -1,9 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+/* FORMATAÇÃO PARA DISPOSITIVOS */
+
+
+@media (max-width: 360px){ 
+  .img-1 {
+    display: none;
+  }
+  .calculadora{
+    width: 300px;
+  }
+  
+}
+
+@media (min-width: 360px){ 
+  .img-1 {
+    display: none;
+  }
+  .calculadora{
+    width: 300px;
+  }
+}
+
+@media (min-width: 960px){ /* CE FOR MAIOR QUE 960PX FAZ */
+  .img-1 {
+    width: 300px;
+    display: flex;
+  }
+}
+
+@media (min-width: 1920px){ 
+  .img-1 {
+    width: 400px;
+    display: flex;
+  }
+  .result {
+    font-size: 30px;
+  }
+  a {
+    font-size: 90px;
+  }
+  .calculadora {
+    width: 500px;
+  }
+  input {
+    width: 300px;
+    height: 40px;
+  }
+  button{
+    width: 100px;
+    height: 40px;
+  }
+}
+
 
 
 h1{
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px;
   text-align: center;
+  font-family: 'Rancho', sans-serif;
 }
 
 input { 
@@ -14,23 +70,54 @@ input {
   margin: 4px
 }
 
-img {
-  width: 300px;
-  
-}
+
 
 button {
   border: 1px solid #000000;
   background: #d8d8d8;
   padding: 10px;
   font-size: 15px;
+  border-radius: 16px;
 }
+
 a {
   text-decoration: none;
   color: black;
+}
+
+
+.result {
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.divcentral {
+  display:flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+  margin-top:50px;
+}
+
+.container {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  
 }
 
 form {
   text-align: center;
 }
 
+.calculadora {
+  padding:20px;
+  margin: 20px;
+  text-align: right;
+  
+}
+
+input {
+  border-radius: 16px;
+}

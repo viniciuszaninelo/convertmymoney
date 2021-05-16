@@ -1,16 +1,18 @@
 <%- include('header') %>
 
-  <div className='div-cenral'>
-    <!--QUANDO USAR 'GET ' E QUANDO USAR O 'POST'
-      - SE USARMOS O POST NESSE EXEMPLO, NOS NÃO VAMOS CONSEGUIR COMPARTILHAR ESSE LINK.
-      - JA O GET ELE PERMITE QUE NOS FAÇAMOS A CONTAÇÃO E MANDE PARA QUE ALGUEM TAMBÉM CONSIGA FAZER, SÓ QUE DO DISPOSITIVO DELA
-    -- ENTAO PARA ESSE EXEPLO VAMOS USAR O GET PARA QUE POSSA TER O COMPARTILHAMENTO DE LINKS
-      -->
+<div class='container'>
+  <div class='divcentral'>
+
+
     <form method="GET" action="/cotacao">
-      <input name="cotaçao" placeholder="Cotação dolar" /> <br>
+      <input name="cotacao" placeholder="Cotação dolar" /> <br>
       <input name="quantidade" placeholder="Quantidade de dolares " /> <br>
       <button>Converter</button>
     </form>
   </div>
+    <div>
+      <img class='img-1' src="ConvertMyMoney.png" alt="imagemconverty">
+    </div> 
+</div>
 
-  <%- include('footer') %>
+  <%- include('footer') %> 
