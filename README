@@ -10,7 +10,7 @@ The project is summarized in a website that makes a conversion of a value accord
 ![Preview](https://github.com/viniciusmarquezaninelo/convertmymoney/blob/master/convertmymoneyheadme.png)
 
 
-### Prerequisites
+### Prerequisites 
 
 ```
 npm install 
