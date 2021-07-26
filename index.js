@@ -10,8 +10,9 @@ app.set('views', path.join(__dirname, 'views')) // 'path.join' vai criar um dire
 app.use(express.static(path.join(__dirname, 'public'))) // Aqui é um lugar para colocar os nossos arquivos, (css, fotos , etc...)  -> NA PASTA PUBLIC VAI TA OS NOSSOS ARQUIVOS
 app.get('/', async(req, res) => {
   const cotacao = await apiBCB.getCotacao()
-  console.log('cotacao', cotacao)
-  res.render('home')
+  res.render('home', {
+    cotacao
+  })
 })
 
 app.get('/cotacao', (req, res) => {
