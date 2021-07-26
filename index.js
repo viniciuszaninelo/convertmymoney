@@ -2,12 +2,15 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const convert = require('./lib/convert')
+const apiBCB = require('./lib/api.bcb')
 
 // PARA JA APPARECER A TELA DO FORMULARIO NA TELA, PRECISAMOS UAR O EJS, E PARA USAR O EJS, PRECISO SETAR MEU VIEW ENGINE
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views')) // 'path.join' vai criar um diretorio para mim, ai ele vai pega o diretorio atual(DIRNAME) e somar com o meu 'views'   
 app.use(express.static(path.join(__dirname, 'public'))) // Aqui é um lugar para colocar os nossos arquivos, (css, fotos , etc...)  -> NA PASTA PUBLIC VAI TA OS NOSSOS ARQUIVOS
-app.get('/', (req, res) => {
+app.get('/', async(req, res) => {
+  const cotacao = await apiBCB.getCotacao()
+  console.log('cotacao', cotacao)
   res.render('home')
 })
 
