@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 /* FORMATAÇÃO PARA DISPOSITIVOS */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 @media (max-width: 360px){ 
   .img-1 {
@@ -10,7 +13,6 @@
   .calculadora{
     width: 300px;
   }
-  
 }
 
 @media (min-width: 360px){ 
